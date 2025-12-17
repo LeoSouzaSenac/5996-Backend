@@ -306,6 +306,12 @@ A melhor imagem (oficial da Pokédex):
 dados.sprites.other['official-artwork'].front_default
 ```
 
+ou
+
+```javascript
+dados.sprites.versions['generation-v']['black-white'].animated.front_default; // sprites animados
+```
+
 📌 Essa é a imagem grande usada na Pokédex moderna.
 
 ---
