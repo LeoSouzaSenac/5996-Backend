@@ -257,15 +257,6 @@ Usaremos **async / await**, que é mais legível e moderno.
 
 No `script.js`:
 
-````javascript
-async function buscarPokemon() {
-  const resposta = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-  const dados = await resposta.json()
-
-  console.log(dados)
-}
-
-buscarPokemon()
 ```javascript
 async function buscarPokemon() {
   try {
