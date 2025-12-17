@@ -267,11 +267,15 @@ async function buscarPokemon() {
 
 buscarPokemon()
 ```javascript
-fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
-  .then(resposta => resposta.json())
-  .then(dados => {
+async function buscarPokemon() {
+  try {
+    const resposta = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+    const dados = await resposta.json()
     console.log(dados)
-  })
+  } catch (erro) {
+    console.error('Erro ao buscar o Pokémon:', erro)
+  }
+}
 ````
 
 ---
